@@ -18,7 +18,16 @@
     * [Component List](#####component-list) 
 
 
+
 3. [Project Coding](###project-coding)
+
+4. [Physical Setup](###physical-setup) 
+
+5. [Encountered Issues with Solutions](###encountered-issues-with-solutions) 
+
+
+6. [References and Appreciation](###references-and-appreciations) 
+
 
 
 
@@ -77,10 +86,12 @@ For reference, below is the list of the components used for the project, includi
 
 ### Project Coding
 
+The only coding in this project is that used to configure the Arduino Nano for controlling the circuit. In this section the general fucntion of the coding will be discussed, but to see the actual written-as-is code, please [refer to the coding document found here](https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Studio_Light_Code.ino). 
+
+Using the code, the Arduino's pins are configured as needed for input from the Axia's GPIO port and for output to the LED strip. The only other function of the code is to detail and specify the ON behavior of the LED strip. Note that many different LED behaviors are achievable depending on the coding employed. If you are curious on the possibilities I would check out the site for Neopixels online, or refer to the coding document included in this project's directory. 
 
 
-
-
+### References and Appreciation
 
 
 
