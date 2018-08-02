@@ -26,7 +26,7 @@
 5. [Encountered Issues with Solutions](###encountered-issues-with-solutions) 
 
 
-6. [References and Appreciation](###references-and-appreciations) 
+6. [References and Appreciation](###references-and-appreciation) 
 
 
 
@@ -91,7 +91,8 @@ The only coding in this project is that used to configure the Arduino Nano for c
 Using the code, the Arduino's pins are configured as needed for input from the Axia's GPIO port and for output to the LED strip. The only other function of the code is to detail and specify the ON behavior of the LED strip. Note that many different LED behaviors are achievable depending on the coding employed. If you are curious on the possibilities I would check out the site for Neopixels online, or refer to the coding document included in this project's directory. 
 
 
-### References and Appreciation
+<a name="###References and Appreciation"></a>
+
 
 
 
