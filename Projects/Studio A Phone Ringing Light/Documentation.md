@@ -20,6 +20,6 @@
 
 ### Project Circuitry
 
-![alt text](https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Phone%20Light%20Project%20Circuit%20Diagram.pdf "Project Circuit Diagram")
+![alt text](https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Phone_Light_Project_Circuit_Diagram.png "Project Circuit Diagram")
 
 ### Project Coding
