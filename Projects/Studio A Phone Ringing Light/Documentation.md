@@ -10,7 +10,7 @@ BEFORE MAKING ANY CHANGES TO THIS PROJECT, please make sure to consult the [main
 
 &nbsp;&nbsp;&nbsp;&nbsp; In this file, all project related information can be found. This includes the circuit diagram, links to all reference websites and documents, a recorded list of encountered issues and their found solutions, and more. Please refer to the table below to quickly navigate to your desired section of documention. 
 
-&nbsp;&nbsp;&nbsp;&nbsp; Speaking of references, I want to give a huge shoutout and thanks to Team Whimsy Makerspace: Mel Lester Jr, whose online project served as my main guide for creating this project. For information regarding his project, please read reference one under [References and Appreciation](#references-and-appreciation).
+&nbsp;&nbsp;&nbsp;&nbsp; Speaking of references, I first want to give a huge shoutout and thanks to Team Whimsy Makerspace: Mel Lester Jr, whose online project served as my main guide for creating this project. For information regarding his project, please read reference one under the [References and Appreciation section](#references-and-appreciation). I also want to give thanks to my boss, Saman Gharib, for allowing me the chance to make this and for all the help you've given me throughout the process of creating this. 
 
 #
 
@@ -130,6 +130,16 @@ Note that many different LED ON behaviors are achievable depending on the coding
 #
 
 ### References and Appreciation
+
+1) Arduino Compatible Nano Neopixel Controller 
+Made by Team Whimsy Makerspace: Mel Lester Jr
+Website Address: https://www.hackster.io/whimsy-makerspace/arduino-compatible-nano-neopixel-controller-6f0c4b
+
+2) iQ Console System Installation & User's Guide
+Manual Rev 1.01e -- March 2011 for iQ v1.00 and higher
+Made by Axia, a Telos Alliance Company
+
+3) 
 
 #
 
