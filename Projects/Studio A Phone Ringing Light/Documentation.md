@@ -6,11 +6,11 @@
 
 BEFORE MAKING ANY CHANGES TO THIS PROJECT, please make sure to consult the [maintenance and care section](#maintenance-and-care) of this report. If you need to carry out any repairs on the project, please make sure to consult the [Troubleshooting Issues and Their Solutions section](#troubleshooting-issues-and-their-solutions) first.
 
-&nbsp;&nbsp;&nbsp;&nbsp; This project is a light for studio A which turns on whenever a person calls into the studio. It was made by the current technical coordinator at the time, Jarod Ben-Oliel, per the request of CiTR programmers for a more noticeable phone light in the studio. Before this project, the only available light wasn't very noticeable, meaning programmers would miss call-ins. The project is a simple circuit composed of an Adafruit Neopixel LED Strip which is controlled by an Arudino Nano V3 controller. The controller will turn the LED strip ON/OFF depending if anyone is calling into Studio A.
+This project is a light for studio A which turns on whenever a person calls into the studio. It was made by the current technical coordinator at the time, Jarod Ben-Oliel, per the request of CiTR programmers for a more noticeable phone light in the studio. Before this project, the only available light wasn't very noticeable, meaning programmers would miss call-ins. The project is a simple circuit composed of an Adafruit Neopixel LED Strip which is controlled by an Arudino Nano V3 controller. The controller will turn the LED strip ON/OFF depending if anyone is calling into Studio A.
 
-&nbsp;&nbsp;&nbsp;&nbsp; In this file, all project related information can be found. This includes the circuit diagram, links to all reference websites and documents, a recorded list of encountered issues and their found solutions, and more. Please refer to the table below to quickly navigate to your desired section of documention. 
+In this file, all project related information can be found. This includes the circuit diagram, links to all reference websites and documents, a recorded list of encountered issues and their found solutions, and more. Please refer to the table below to quickly navigate to your desired section of documention. 
 
-&nbsp;&nbsp;&nbsp;&nbsp; Speaking of references, I first want to give a huge shoutout and thanks to Team Whimsy Makerspace: Mel Lester Jr, whose online project served as my main guide for creating this project. For information regarding his project, please read reference one under the [References and Appreciation section](#references-and-appreciation). I also want to give thanks to my boss, Saman Gharib, for allowing me the chance to make this and for all the help you've given me throughout the process of creating this. 
+Speaking of references, I first want to give a huge shoutout and thanks to Team Whimsy Makerspace: Mel Lester Jr, whose online project served as my main guide for creating this project. For information regarding his project, please read reference one under the [References and Appreciation section](#references-and-appreciation). I also want to give thanks to my boss, Saman Gharib, for allowing me the chance to make this and for all the help you've given me throughout the process of creating this. 
 
 #
 
@@ -25,14 +25,11 @@ BEFORE MAKING ANY CHANGES TO THIS PROJECT, please make sure to consult the [main
 
 3. [Project Coding](#project-coding)
 
-4. [Physical Setup](#physical-setup) 
-    * [Photos](#photos)
+4. [Maintenance and Care](#maintenance-and-care)
 
-5. [Maintenance and Care](#maintenance-and-care)
+5. [Troubleshooting Issues and Their Solutions](#troubleshooting-issues-and-their-solutions) 
 
-6. [Troubleshooting Issues and Their Solutions](#troubleshooting-issues-and-their-solutions) 
-
-7. [References and Appreciation](#references-and-appreciation) 
+6. [References and Appreciation](#references-and-appreciation) 
 
 
 #
@@ -78,7 +75,7 @@ For reference, below is the list of the components used for the project, includi
 | 5V 5A Power Supply with female Connector    | Amazon.ca - Link 3                     |
 | 1000uF Electrolytic Capacitors              | Amazon.ca - Link 4                     |
 | Resistor Pack of Multiple Values            | Amazon.ca - Link 5                     |
-| JST SM Connectors                           | Amazon.ca - Link 6                    |
+| JST SM Connectors                           | Amazon.ca - Link 6                     |
 
 **NOTE:** Links mentioned in the above table are listed below to avoid messy table formatting:
 
@@ -113,22 +110,28 @@ Note that many different LED ON behaviors are achievable depending on the coding
 
 #
 
-### Physical Setup
-
-##### Photos
-
-<img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Photos/Circuit_Module_Photo.jpg" width="450" height="450">
-
-
-#
-
 ### Maintenance and Care
 
+#### Accessing the Module
+The circuit seen in the picture under the [Project Circuitry section](#project-circuitry) is the main module of this project. The 3 plugs on the outside of the container must be disconnected from their respective lines to access the module properly. **_ALWAYS unplug the power plug first before handling any of the other cables to avoid damaging the project_**. After this you may unplug the other cords in whichever order you like.     
+
+#### Reprogramming the Arduino
+To reprogram the Arduino you will need to remove the circuit module from the rest of the system, using the steps outlined in the above paragraph. After that you can use the hole provided on the container to run a USB mini b cable to the Arduino Nano. **_IF POSSIBLE, avoid removing the Nano from the strip board_** as its pins are quite delicate and will break after a few times of the Arduino being removed and reinstalled into its pin receptables. 
 
 #
 
 ### Troubleshooting Issues and Their Solutions
 
+| ISSUE                                       | SOLUTION                |
+|:-------------:                              |:-------------:                         |
+|                      |                       |
+|                                 |                      |   
+|                |                   |
+|                     |                     |
+|    |                 |
+|           |                   |
+|             |                  |
+|                       |                 |
 
 
 #
@@ -143,7 +146,9 @@ Website Address: https://www.hackster.io/whimsy-makerspace/arduino-compatible-na
 Manual Rev 1.01e -- March 2011 for iQ v1.00 and higher
 Made by Axia, a Telos Alliance Company
 
-3) 
+3) Saman Gharib
+Technical Manager - CiTR
+Appreciation mentioned for help given to make this project
 
 #
 
