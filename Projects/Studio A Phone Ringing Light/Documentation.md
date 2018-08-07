@@ -23,10 +23,11 @@
 
 4. [Physical Setup](#physical-setup) 
 
-5. [Encountered Issues with Solutions](#encountered-issues-with-solutions) 
+5. [Maintenance and Care](#maintenance-and-care)
 
+6. [Troubleshooting Issues and Their Solutions](#troubleshooting-issues-and-their-solutions) 
 
-6. [References and Appreciation](#references-and-appreciation) 
+7. [References and Appreciation](#references-and-appreciation) 
 
 
 
@@ -39,21 +40,21 @@
 <img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Photos/Circuit_Module_Photo.jpg" width="450" height="450">
 
 
+BEFORE MAKING ANY CHANGES TO THE CIRCUIT SETUP, please make sure to consult the [maintenance and care section](#maintenance-and-care) and the[troubleshooting section](#troubleshooting-and-solutions) of this report.
+
 Featured above is the project circuit diagram which was created using Fritzing.
 
 Starting from the top left we see terminal for our plugin dedicated 5V power supply, it feeds the ground and 5V rails of the entire circuit. To mitigate possible power surges, a 1000uF electrolytic capacitor is installed across our 5V rails.  
 
 Moving down, we see the Arduino Nano. Its two jobs are to monitor the control signal and to turn ON/OFF the LED strip as required, depending on the state of the control signal. 
 
-The control signal is a digital signal sent from an Axia iQ Core GPIO port using an open-collector output pin, meaning this output functions as an opposite logic output. When the phone line is empty (no call incoming), the pin rests at 5V to indicate a LOGIC 0. When someone is calling, the pin will be pulled down to 0V to indicate a LOGIC 1. Note, the reference 5V for the Arduino input pin is provided internally by the Arduino board by configuring its pin using the "INPUT_PULLUP" assignment. For more details about this assignment please [refer to the Project Coding Section](###project-coding). If the board observes a LOGIC 1 it turns the LED strip ON and otherwise it turns the strip OFF. 
+The control signal is a digital signal sent from an Axia iQ Core GPIO port using an open-collector output pin, meaning this output functions as an opposite logic output. When the phone line is empty (no call incoming), the pin rests at 5V to indicate a LOGIC 0. When someone is calling, the pin will be pulled down to 0V to indicate a LOGIC 1. Note, the reference 5V for the Arduino input pin is provided internally by the Arduino board by configuring its pin using the "INPUT_PULLUP" assignment. For more details about this assignment please [refer to the Project Coding Section](#project-coding). If the board observes a LOGIC 1 it turns the LED strip ON and otherwise it turns the strip OFF. 
 
-In terms of the phyisical circuit, the control signal is sent through the line called "GPIO Phone-Ringing-Signal Input to Arduino" which is connected to the strip board and to GPIO PIN 2 of GPIO PORT 8 of the axia core in Studio A. To limit the current between the Axia core and the Arduino we include a 470 ohm resistor. Due to the sensitivity of the Arduino pins, to have the input pin read 0V (or a LOGIC 1) properly from GPIO PIN 2, we also must attach the AXIA core's commonon return / ground wire to our circuits ground. To accomplish this we use the wire labelled "GPIO Common Return Wire" to connect from GPIO PIN 7, of GPIO PORT 8, to our circuit's ground rail. For reference documentation regarding the GPIO Setup, please refer to SSSSSEEEECCCTTTIIIIOOONNN MISSING.
+In terms of the phyisical circuit, the control signal is sent through the line called "GPIO Phone-Ringing-Signal Input to Arduino" which is connected to the strip board and to GPIO PIN 2 of GPIO PORT 8 of the axia core in Studio A. To limit the current between the Axia core and the Arduino we include a 470 ohm resistor. Due to the sensitivity of the Arduino pins, to have the input pin read 0V (or a LOGIC 1) properly from GPIO PIN 2, we also must attach the AXIA core's commonon return / ground wire to our circuits ground. To accomplish this we use the wire labelled "GPIO Common Return Wire" to connect from GPIO PIN 7, of GPIO PORT 8, to our circuit's ground rail. For reference documentation regarding the GPIO Setup, please look to chapter 5 of Axia's "iQ Console System Installation & User's Guide." For more information about this guide please go to the [References and Appreciation section](#references-and-appreciation).
 
 To operate the LED strip we use three wires, two for providing the necessary power and 5V for the strip, and a third for the PWM control signal which controls the behaviour of the strip. These are labelled "LED Strip Ground Wire," "LED Strip 5V Wire," and LED Strip Control-Signal Wire" respectively. Again, as a precaution, we include a 1000 ohm resistor to limit current going between the Arduino board and the LED strip Control-Signal Wire. 
 
-For reference, below is the list of the components used for the project, including where the parts were sourced from. Note that the JST SM connectors, mentioned in the below table, are used between the strip board and the GPIO port and between the strip board and the LED strip to allow easy removal and maintenace. 
-
-BEFORE MAKING ANY CHANGES TO THE CIRCUIT SETUP, please make sure to consult the [troubleshooting section](###troubleshooting).
+For reference, below is the list of the components used for the project, including where the parts were sourced from. Note that the JST SM connectors, mentioned in the below table, are used between the strip board and the GPIO port and between the strip board and the LED strip to allow easy removal and maintenace. This allows the circuit module to be easily unistalled and maintained as needed. For more details regarding this please consult the [Physical Setup section](#physical-setup). 
 
 
 ##### Component List 
@@ -97,8 +98,23 @@ The only coding in this project is that used to configure the Arduino Nano for c
 To summarize, using the code, the Arduino's pins are configured as needed for input from the Axia's GPIO port and for output to the LED strip. The only other function of the code is to detail and specify the ON behavior of the LED strip. Note that many different LED ON behaviors are achievable depending on the coding employed. If you are curious on the possibilities, or the general code structure for controlling the LED strip, then I would check out the online site for Neopixels. Other places I would check include the template project's code document I heavily pulled from to make this project (found HHHEEERE, or in the REFERENCES SSSEEECTION) or refer to the coding document included in this project's directory (or found HHHHEEERE). 
 
 
-<a name="###References and Appreciation"></a>
+### Physical Setup
 
+
+
+
+### Maintenance and Care
+
+
+
+
+### Troubleshooting Issues and Their Solutions
+
+
+
+
+
+### References and Appreciation
 
 
 
