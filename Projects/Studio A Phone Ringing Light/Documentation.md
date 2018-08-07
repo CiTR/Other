@@ -35,7 +35,8 @@
 
 ![Project Circuit Diagram](https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Phone_Light_Project_Circuit_Diagram.png "Project Circuit Diagram")
 
-![Project Circuit Photo](https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Photos/Circuit%20Module%20Photo.jpg "Project Circuit Photo")
+<img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Photos/Circuit_Module_Photo.jpg" width="600" height="750">
+
 
 Featured above is the project circuit diagram which was created using Fritzing.
 
