@@ -35,6 +35,8 @@
 
 ![alt text](https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Phone_Light_Project_Circuit_Diagram.png "Project Circuit Diagram")
 
+![alt text](https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Photos/Circuit%20Module%20Photo.jpg "Project Circuit Photo")
+
 Featured above is the project circuit diagram which was created using Fritzing.
 
 Starting from the top left we see terminal for our plugin dedicated 5V power supply, it feeds the ground and 5V rails of the entire circuit. To mitigate possible power surges, a 1000uF electrolytic capacitor is installed across our 5V rails.  
