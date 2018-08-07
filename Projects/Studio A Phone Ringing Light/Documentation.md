@@ -10,6 +10,8 @@ BEFORE MAKING ANY CHANGES TO THIS PROJECT, please make sure to consult the [main
 
 &nbsp;&nbsp;&nbsp;&nbsp; In this file, all project related information can be found. This includes the circuit diagram, links to all reference websites and documents, a recorded list of encountered issues and their found solutions, and more. Please refer to the table below to quickly navigate to your desired section of documention. 
 
+&nbsp;&nbsp;&nbsp;&nbsp; Speaking of references, I want to give a huge shoutout and thanks to Team Whimsy Makerspace: Mel Lester Jr, whose online project served as my main guide for creating this project. For information regarding his project, please read reference one under [References and Appreciation](#references-and-appreciation).
+
 #
 
 ## Table of Contents
@@ -52,7 +54,7 @@ Moving down, we see the Arduino Nano. Its two jobs are to monitor the control si
 
 The control signal is a digital signal sent from an Axia iQ Core GPIO port using an open-collector output pin, meaning this output functions as an opposite logic output. When the phone line is empty (no call incoming), the pin rests at 5V to indicate a LOGIC 0. When someone is calling, the pin will be pulled down to 0V to indicate a LOGIC 1. Note, the reference 5V for the Arduino input pin is provided internally by the Arduino board by configuring its pin using the "INPUT_PULLUP" assignment. For more details about this assignment please [refer to the Project Coding Section](#project-coding). If the board observes a LOGIC 1 it turns the LED strip ON and otherwise it turns the strip OFF. 
 
-In terms of the phyisical circuit, the control signal is sent through the line called "GPIO Phone-Ringing-Signal Input to Arduino" which is connected to the strip board and to GPIO PIN 2 of GPIO PORT 8 of the axia core in Studio A. To limit the current between the Axia core and the Arduino we include a 470 ohm resistor. Due to the sensitivity of the Arduino pins, to have the input pin read 0V (or a LOGIC 1) properly from GPIO PIN 2, we also must attach the AXIA core's commonon return / ground wire to our circuits ground. To accomplish this we use the wire labelled "GPIO Common Return Wire" to connect from GPIO PIN 7, of GPIO PORT 8, to our circuit's ground rail. For reference documentation regarding the GPIO Setup, please look to chapter 5 of Axia's "iQ Console System Installation & User's Guide." For more information about this guide please go to the [References and Appreciation section](#references-and-appreciation).
+In terms of the phyisical circuit, the control signal is sent through the line called "GPIO Phone-Ringing-Signal Input to Arduino" which is connected to the strip board and to GPIO PIN 2 of GPIO PORT 8 of the axia core in Studio A. To limit the current between the Axia core and the Arduino we include a 470 ohm resistor. Due to the sensitivity of the Arduino pins, to have the input pin read 0V (or a LOGIC 1) properly from GPIO PIN 2, we also must attach the AXIA core's commonon return / ground wire to our circuits ground. To accomplish this we use the wire labelled "GPIO Common Return Wire" to connect from GPIO PIN 7, of GPIO PORT 8, to our circuit's ground rail. For reference documentation regarding the GPIO Setup, please look to chapter 5 of Axia's "iQ Console System Installation & User's Guide" (REFERENCE 2). For more information about this guide please go to the [References and Appreciation section](#references-and-appreciation).
 
 To operate the LED strip we use three wires, two for providing the necessary power and 5V for the strip, and a third for the PWM control signal which controls the behaviour of the strip. These are labelled "LED Strip Ground Wire," "LED Strip 5V Wire," and LED Strip Control-Signal Wire" respectively. Again, as a precaution, we include a 1000 ohm resistor to limit current going between the Arduino board and the LED strip Control-Signal Wire. 
 
@@ -94,6 +96,9 @@ For reference, below is the list of the components used for the project, includi
  
 + Link 6 - https://www.amazon.ca/Electop-Pairs-Female-Connector-Cable/dp/B01MQ011XO/ref=sr_1_fkmr0_1?ie=UTF8&qid=1529969808&sr=8-1-fkmr0&keywords=3-pin+JST+SM+Plug+%2B+Receptacle+Cable+Set
 
+
+**NOTE:** The links above correspond to the purchasing sites for components listed in the table immediately above this section.
+
 #
 
 
@@ -101,7 +106,9 @@ For reference, below is the list of the components used for the project, includi
 
 The only coding in this project is that used to configure the Arduino Nano for controlling the circuit. In this section the general fucntion of the coding will be discussed, but to see the actual written-as-is code, please [refer to the coding document found here](https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Studio_Light_Code.ino). 
 
-To summarize, using the code, the Arduino's pins are configured as needed for input from the Axia's GPIO port and for output to the LED strip. The only other function of the code is to detail and specify the ON behavior of the LED strip. Note that many different LED ON behaviors are achievable depending on the coding employed. If you are curious on the possibilities, or the general code structure for controlling the LED strip, then I would check out the online site for Neopixels. Other places I would check include the template project's code document I heavily pulled from to make this project (found HHHEEERE, or in the REFERENCES SSSEEECTION) or refer to the coding document included in this project's directory (or found HHHHEEERE). 
+To summarize, using the code, the Arduino's pins are configured as needed for input from the Axia's GPIO port and for output to the LED strip. The only other function of the code is to detail and specify the ON behavior of the LED strip. 
+
+Note that many different LED ON behaviors are achievable depending on the coding employed. If you are curious on possible LED behaviours not listed in my coding then I would read over the coding from the project I used for my main reference (REFERENCE 1), found [here](https://www.hackster.io/whimsy-makerspace/arduino-compatible-nano-neopixel-controller-6f0c4b). And if you need more after that then look over the many Neopixel related projects hosted on Adafruit's website found [here](https://learn.adafruit.com/search?q=neopixel).  
 
 #
 
