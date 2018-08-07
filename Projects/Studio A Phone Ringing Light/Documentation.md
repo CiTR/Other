@@ -19,13 +19,14 @@ BEFORE MAKING ANY CHANGES TO THIS PROJECT, please make sure to consult the [main
 1. [Project General Summary](#project-general-summary)
 
 2. [Project Circuitry](#project-circuitry)
-     * [Description](#description)
-     * [Component List](#component-list) 
-     * [Component Purchase Links](#component-purchase-links)
+    * [Description](#description)
+    * [Component List](#component-list) 
+    * [Component Purchase Links](#component-purchase-links)
 
 3. [Project Coding](#project-coding)
 
 4. [Physical Setup](#physical-setup) 
+    * [Photos](#photos)
 
 5. [Maintenance and Care](#maintenance-and-care)
 
@@ -114,6 +115,9 @@ Note that many different LED ON behaviors are achievable depending on the coding
 
 ### Physical Setup
 
+##### Photos
+
+<img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Photos/Circuit_Module_Photo.jpg" width="450" height="450">
 
 
 #
