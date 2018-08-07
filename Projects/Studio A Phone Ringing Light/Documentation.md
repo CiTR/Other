@@ -11,13 +11,14 @@
     
 ## Table of Contents
 
-1. - [Project General Summary](#project-general-summary)
+1. [Project General Summary](#project-general-summary)
 
 
-2. - [Project Circuitry](#project-circuitry)
+2. [Project Circuitry](#project-circuitry)
+     * [Images](#Images) 
+     * [Written Description](#written-description)
      * [Component List](#component-list) 
-
-
+     * [Component Purchase Links](#component-purchase-links)
 
 3. [Project Coding](#project-coding)
 
