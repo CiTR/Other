@@ -38,7 +38,7 @@ Speaking of references, I first want to give a huge shoutout and thanks to Team 
 
 <img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Phone_Light_Project_Circuit_Diagram.png" width="1000" height="500">
 
-<img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Photos/Circuit_Module_Photo.jpg" width="450" height="450">
+<img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Circuit_Module_Photo.jpg" width="450" height="450">
 
 #
 
