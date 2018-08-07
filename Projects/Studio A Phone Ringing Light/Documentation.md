@@ -11,22 +11,22 @@
     
 ## Table of Contents
 
-1.  [Project General Summary](###project-general-summary)
+1. - [Project General Summary](#project-general-summary)
 
 
-2. [Project Circuitry](###project-circuitry)
-    * [Component List](#####component-list) 
+2. - [Project Circuitry](#project-circuitry)
+     * [Component List](#component-list) 
 
 
 
-3. [Project Coding](###project-coding)
+3. [Project Coding](#project-coding)
 
-4. [Physical Setup](###physical-setup) 
+4. [Physical Setup](#physical-setup) 
 
-5. [Encountered Issues with Solutions](###encountered-issues-with-solutions) 
+5. [Encountered Issues with Solutions](#encountered-issues-with-solutions) 
 
 
-6. [References and Appreciation](###references-and-appreciation) 
+6. [References and Appreciation](#references-and-appreciation) 
 
 
 
