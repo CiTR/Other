@@ -4,19 +4,20 @@
 
 [//]: # (Comment: &nbsp featured below is for spacing purposes)
 
+BEFORE MAKING ANY CHANGES TO THIS PROJECT, please make sure to consult the [maintenance and care section](#maintenance-and-care) of this report. If you need to carry out any repairs on the project, please make sure to consult the [Troubleshooting Issues and Their Solutions section](#troubleshooting-issues-and-their-solutions) first.
+
 &nbsp;&nbsp;&nbsp;&nbsp; This project is a light for studio A which turns on whenever a person calls into the studio. It was made by the current technical coordinator at the time, Jarod Ben-Oliel, per the request of CiTR programmers for a more noticeable phone light in the studio. Before this project, the only available light wasn't very noticeable, meaning programmers would miss call-ins. The project is a simple circuit composed of an Adafruit Neopixel LED Strip which is controlled by an Arudino Nano V3 controller. The controller will turn the LED strip ON/OFF depending if anyone is calling into Studio A.
 
 &nbsp;&nbsp;&nbsp;&nbsp; In this file, all project related information can be found. This includes the circuit diagram, links to all reference websites and documents, a recorded list of encountered issues and their found solutions, and more. Please refer to the table below to quickly navigate to your desired section of documention. 
 
-    
+#
+
 ## Table of Contents
 
 1. [Project General Summary](#project-general-summary)
 
-
 2. [Project Circuitry](#project-circuitry)
-     * [Images](#Images) 
-     * [Written Description](#written-description)
+     * [Description](#description)
      * [Component List](#component-list) 
      * [Component Purchase Links](#component-purchase-links)
 
@@ -31,21 +32,21 @@
 7. [References and Appreciation](#references-and-appreciation) 
 
 
-
+#
 
 ### Project Circuitry
 
 <img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Phone_Light_Project_Circuit_Diagram.png" width="1000" height="500">
 
-
 <img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Photos/Circuit_Module_Photo.jpg" width="450" height="450">
 
+#
 
-BEFORE MAKING ANY CHANGES TO THE CIRCUIT SETUP, please make sure to consult the [maintenance and care section](#maintenance-and-care) and the[troubleshooting section](#troubleshooting-and-solutions) of this report.
+##### Description
 
-Featured above is the project circuit diagram which was created using Fritzing.
+Featured above is the project circuit diagram (which was created using Fritzing) and a picture of the actual circuit module.
 
-Starting from the top left we see terminal for our plugin dedicated 5V power supply, it feeds the ground and 5V rails of the entire circuit. To mitigate possible power surges, a 1000uF electrolytic capacitor is installed across our 5V rails.  
+Starting from the top left of the circuit diagram we see terminal for our plugin dedicated 5V power supply, it feeds the ground and 5V rails of the entire circuit. To mitigate possible power surges, a 1000uF electrolytic capacitor is installed across our 5V rails.  
 
 Moving down, we see the Arduino Nano. Its two jobs are to monitor the control signal and to turn ON/OFF the LED strip as required, depending on the state of the control signal. 
 
@@ -57,8 +58,10 @@ To operate the LED strip we use three wires, two for providing the necessary pow
 
 For reference, below is the list of the components used for the project, including where the parts were sourced from. Note that the JST SM connectors, mentioned in the below table, are used between the strip board and the GPIO port and between the strip board and the LED strip to allow easy removal and maintenace. This allows the circuit module to be easily unistalled and maintained as needed. For more details regarding this please consult the [Physical Setup section](#physical-setup). 
 
+#
 
 ##### Component List 
+
 # 
 
 [//]: # (Comment: The extra # below the "Component List" header is to add necessary space between this header and the below table.)
@@ -76,6 +79,8 @@ For reference, below is the list of the components used for the project, includi
 
 **NOTE:** Links mentioned in the above table are listed below to avoid messy table formatting:
 
+#
+
 ##### Component Purchase Links
 + Link 1 - https://www.amazon.ca/Arduino-ELEGOO-ATmega328P-Compatible-Without/dp/B071NMD14Y/ref=pd_cp_107_1?pf_rd_m=A3DWYIK6Y9EEQB&pf_rd_p=5749673626753893530&pf_rd_r=FJ9947MQKW51RNMMHDAW&pd_rd_wg=jlC5T&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&pd_rd_w=QLDJ3&pf_rd_i=desktop-dp-sims&pd_rd_r=4db2a773-78ce-11e8-8a2a-83c3f18333a3&pd_rd_i=B071NMD14Y&psc=1&refRID=FJ9947MQKW51RNMMHDAW
 
@@ -89,7 +94,7 @@ For reference, below is the list of the components used for the project, includi
  
 + Link 6 - https://www.amazon.ca/Electop-Pairs-Female-Connector-Cable/dp/B01MQ011XO/ref=sr_1_fkmr0_1?ie=UTF8&qid=1529969808&sr=8-1-fkmr0&keywords=3-pin+JST+SM+Plug+%2B+Receptacle+Cable+Set
 
-
+#
 
 
 ### Project Coding
@@ -98,26 +103,28 @@ The only coding in this project is that used to configure the Arduino Nano for c
 
 To summarize, using the code, the Arduino's pins are configured as needed for input from the Axia's GPIO port and for output to the LED strip. The only other function of the code is to detail and specify the ON behavior of the LED strip. Note that many different LED ON behaviors are achievable depending on the coding employed. If you are curious on the possibilities, or the general code structure for controlling the LED strip, then I would check out the online site for Neopixels. Other places I would check include the template project's code document I heavily pulled from to make this project (found HHHEEERE, or in the REFERENCES SSSEEECTION) or refer to the coding document included in this project's directory (or found HHHHEEERE). 
 
+#
 
 ### Physical Setup
 
 
 
+#
 
 ### Maintenance and Care
 
 
-
+#
 
 ### Troubleshooting Issues and Their Solutions
 
 
 
-
+#
 
 ### References and Appreciation
 
-
+#
 
 
 
