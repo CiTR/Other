@@ -122,33 +122,29 @@ To reprogram the Arduino you will need to remove the circuit module from the res
 
 ### Troubleshooting Issues and Their Solutions
 
-| ISSUE                                       | SOLUTION                |
-|:-------------:                              |:-------------:                         |
-|                      |                       |
-|                                 |                      |   
-|                |                   |
-|                     |                     |
-|    |                 |
-|           |                   |
-|             |                  |
-|                       |                 |
-
+| ISSUE                                                                                           | SOLUTION                |
+|:-------------:                                                                                  |:-------------:          |
+| Computer cannot connect to Arduino to upload a new code configruation. | Make sure that the cord being used isn't charge only. |
+| LED strip won't light up after lengthings connection wires between LED strip and circuit module. |  Recall that more wire means more resistance, try reducing the resistor value of the resistor placed between the Arduino Nano and the LED Strip Control-Signal Wire. |   
+| Circuit works when the activation signal is looped directly to the circuit's ground rail. Circuit doesn't work when it is instead connected to the GPIO signal from GPIO PIN 2 of the given port. | Make sure that you also attach the ground signal from GPIO PIN 7 of the given GPIO port to the ground of the circuit module. Without this, the arduino pin cannot accurately read logic off the output signal pin. |
+| When I plug in the LED strip using the male JST plug it doesn't work | Note that you must feed a signal into the LED strip using the female JST plug as the control signal properly passes through the circuit one way only. Use the the male JST plug side to chain multiple LED strips together  |
+| Arduino isn't working even though the PWR LED on it lights up. | Make sure you have the power wire soldered to the Arduino's 5V or VIN pin and that it isn't soldered to the Arduino's RST pin. |
 
 #
 
 ### References and Appreciation
 
-1) Arduino Compatible Nano Neopixel Controller 
-Made by Team Whimsy Makerspace: Mel Lester Jr
-Website Address: https://www.hackster.io/whimsy-makerspace/arduino-compatible-nano-neopixel-controller-6f0c4b
+1) Arduino Compatible Nano Neopixel Controller   
+Made by Team Whimsy Makerspace: Mel Lester Jr  
+Website Address: https://www.hackster.io/whimsy-makerspace/arduino-compatible-nano-neopixel-controller-6f0c4b  
 
-2) iQ Console System Installation & User's Guide
-Manual Rev 1.01e -- March 2011 for iQ v1.00 and higher
-Made by Axia, a Telos Alliance Company
+2) iQ Console System Installation & User's Guide   
+Manual Rev 1.01e -- March 2011 for iQ v1.00 and higher  
+Made by Axia, a Telos Alliance Company  
 
-3) Saman Gharib
-Technical Manager - CiTR
-Appreciation mentioned for help given to make this project
+3) Saman Gharib  
+Technical Manager - CiTR  
+Appreciation mentioned for help given to make this project  
 
 #
 
