@@ -51,7 +51,7 @@ Moving down, we see the Arduino Nano. Its two jobs are to monitor the control si
 
 The control signal is a digital signal sent from an Axia iQ Core GPIO port using an open-collector output pin, meaning this output functions as an opposite logic output. When the phone line is empty (no call incoming), the pin rests at 5V to indicate a LOGIC 0. When someone is calling, the pin will be pulled down to 0V to indicate a LOGIC 1. Note, the reference 5V for the Arduino input pin is provided internally by the Arduino board by configuring its pin using the "INPUT_PULLUP" assignment. For more details about this assignment please [refer to the Project Coding Section](#project-coding). If the board observes a LOGIC 1 it turns the LED strip ON and otherwise it turns the strip OFF. 
 
-In terms of the phyisical circuit, the control signal is sent through the line called "GPIO Phone-Ringing-Signal Input to Arduino" which is connected to the strip board and to GPIO PIN 2 of GPIO PORT 8 of the axia core in Studio A. To limit the current between the Axia core and the Arduino we include a 470 ohm resistor. Due to the sensitivity of the Arduino pins, to have the input pin read 0V (or a LOGIC 1) properly from GPIO PIN 2, we also must attach the AXIA core's commonon return / ground wire to our circuits ground. To accomplish this we use the wire labelled "GPIO Common Return Wire" to connect from GPIO PIN 7, of GPIO PORT 8, to our circuit's ground rail. For reference documentation regarding the GPIO Setup, please look to chapter 5 of Axia's "iQ Console System Installation & User's Guide" (REFERENCE 2). For more information about this guide please go to the [References and Appreciation section](#references-and-appreciation).
+In terms of the phyisical circuit, the control signal is sent through the line called "GPIO Phone-Ringing-Signal Input to Arduino" which is connected to the strip board and to GPIO PIN 2 of GPIO PORT 8 of the axia core in Studio A. To limit the current between the Axia core and the Arduino we include a 470 ohm resistor. Due to the sensitivity of the Arduino pins, to have the input pin read 0V (or a LOGIC 1) properly from GPIO PIN 2, we also must attach the AXIA core's commonon return / ground wire to our circuits ground. To accomplish this we use the wire labelled "GPIO Common Return Wire" to connect from GPIO PIN 7, of GPIO PORT 8, to our circuit's ground rail. For reference documentation regarding the GPIO Setup, please look to chapter 5 of Axia's "iQ Console System Installation & User's Guide" (REFERENCE 2). For more information about this guide please go to the [References and Appreciation section](#references-and-appreciation). To make sure you have the proper GPIO port configured for this project, please refer to the [GPIO Configuration section](#gpio-configuration). 
 
 To operate the LED strip we use three wires, two for providing the necessary power and 5V for the strip, and a third for the PWM control signal which controls the behaviour of the strip. These are labelled "LED Strip Ground Wire," "LED Strip 5V Wire," and LED Strip Control-Signal Wire" respectively. Again, as a precaution, we include a 1000 ohm resistor to limit current going between the Arduino board and the LED strip Control-Signal Wire. 
 
@@ -87,6 +87,17 @@ To summarize, using the code, the Arduino's pins are configured as needed for in
 Note that many different LED ON behaviors are achievable depending on the coding employed. If you are curious on possible LED behaviours not listed in my coding then I would read over the coding from the project I used for my main reference (REFERENCE 1), found [here](https://www.hackster.io/whimsy-makerspace/arduino-compatible-nano-neopixel-controller-6f0c4b). And if you need more after that then look over the many Neopixel related projects hosted on Adafruit's website found [here](https://learn.adafruit.com/search?q=neopixel).  
 
 #
+
+### GPIO Configuration
+
+To have the project work, the Axia iQ Core must be configured to relay the "Phone-is-ringing Signal" to the correct GPIO port. Once done, you can connect the GPIO cable from the circuit module to the configured GPIO port for the desired result (assuming the configuration sends the needed signal through GPIO PIN 2). 
+
+To configure the GPIO port correctly please read over the following steps:
+
+1) 
+
+
+
 
 ### Maintenance and Care
 
