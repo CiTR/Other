@@ -21,7 +21,6 @@ Speaking of references, I first want to give a huge shoutout and thanks to Team 
 2. [Project Circuitry](#project-circuitry)
     * [Description](#description)
     * [Component List](#component-list) 
-    * [Component Purchase Links](#component-purchase-links)
 
 3. [Project Coding](#project-coding)
 
@@ -70,35 +69,14 @@ For reference, below is the list of the components used for the project, includi
 |:-------------:                              |:-------------:                         |
 | Prototyping Strip Board                     | Lee's Electronics                      |
 | AWG 6 Wire                                  | Lee's Electornics                      |   
-| Arduino Nano V3 from Elegoo                 | Amazon.ca - Link 1                     |
-| Neopixel 60 LED Strip                       | Amazon.ca - Link 2                     |
-| 5V 5A Power Supply with female Connector    | Amazon.ca - Link 3                     |
-| 1000uF Electrolytic Capacitors              | Amazon.ca - Link 4                     |
-| Resistor Pack of Multiple Values            | Amazon.ca - Link 5                     |
-| JST SM Connectors                           | Amazon.ca - Link 6                     |
-
-**NOTE:** Links mentioned in the above table are listed below to avoid messy table formatting:
+| Arduino Nano V3 from Elegoo                 | http://a.co/cxNeK63                    |
+| Neopixel 60 LED Strip                       | http://a.co/cSyl0I4                    |
+| 5V 5A Power Supply with female Connector    | http://a.co/5IKmlYb                    |
+| 1000uF Electrolytic Capacitors              | http://a.co/6uLZvpv                    |
+| Resistor Pack of Multiple Values            | http://a.co/3XxzDq6                    |
+| JST SM Connectors                           | http://a.co/7mpo3dt                    |
 
 #
-
-##### Component Purchase Links
-+ Link 1 - https://www.amazon.ca/Arduino-ELEGOO-ATmega328P-Compatible-Without/dp/B071NMD14Y/ref=pd_cp_107_1?pf_rd_m=A3DWYIK6Y9EEQB&pf_rd_p=5749673626753893530&pf_rd_r=FJ9947MQKW51RNMMHDAW&pd_rd_wg=jlC5T&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&pd_rd_w=QLDJ3&pf_rd_i=desktop-dp-sims&pd_rd_r=4db2a773-78ce-11e8-8a2a-83c3f18333a3&pd_rd_i=B071NMD14Y&psc=1&refRID=FJ9947MQKW51RNMMHDAW
-
-+ Link 2 - https://www.amazon.ca/NooElec-Addressable-Waterproof-Connectors-Pre-Soldered/dp/B00JR0MJIU/ref=sr_1_fkmr0_4?ie=UTF8&qid=1530123814&sr=8-4-fkmr0&keywords=neopixel+140
-
-+ Link 3 - https://www.amazon.ca/ALITOVE-Converter-5-5x2-1mm-100V-240V-Security/dp/B078RT3ZPS/ref=sr_1_7?s=electronics&ie=UTF8&qid=1529971198&sr=1-7&keywords=5V%2Bpower%2Bsupply%2B5.5x2.1mm%2BPlug&th=1
-
-+ Link 4 - https://www.amazon.ca/Nichicon-Electrolytic-Capacitor-1000uF-10X20mm/dp/B00J0CAWRA/ref=sr_1_2?s=industrial&ie=UTF8&qid=1529969521&sr=1-2&keywords=1000uF+capacitor&dpID=31-u1fMJGNL&preST=_SX342_QL70_&dpSrc=srch 
-
-+ Link 5 - https://www.amazon.ca/ELEGOO-Values-Resistor-Assortment-Ohm-1M/dp/B071HJWJZB/ref=sr_1_4?s=industrial&ie=UTF8&qid=1529969597&sr=1-4&keywords=resistors&dpID=51XXj07ePIL&preST=_SX342_QL70_&dpSrc=srch
- 
-+ Link 6 - https://www.amazon.ca/Electop-Pairs-Female-Connector-Cable/dp/B01MQ011XO/ref=sr_1_fkmr0_1?ie=UTF8&qid=1529969808&sr=8-1-fkmr0&keywords=3-pin+JST+SM+Plug+%2B+Receptacle+Cable+Set
-
-
-**NOTE:** The links above correspond to the purchasing sites for components listed in the table immediately above this section.
-
-#
-
 
 ### Project Coding
 
