@@ -24,11 +24,15 @@ Speaking of references, I first want to give a huge shoutout and thanks to Team 
 
 3. [Project Coding](#project-coding)
 
-4. [Maintenance and Care](#maintenance-and-care)
+4. [GPIO Configuration](#gpio-configuration)
 
-5. [Troubleshooting Issues and Their Solutions](#troubleshooting-issues-and-their-solutions) 
+5. [Maintenance and Care](#maintenance-and-care)
 
-6. [References and Appreciation](#references-and-appreciation) 
+6. [Troubleshooting Issues and Their Solutions](#troubleshooting-issues-and-their-solutions) 
+
+7. [Upgrades and Improvement](#upgrades-and-improvement)
+
+8. [References and Appreciation](#references-and-appreciation) 
 
 
 #
@@ -94,7 +98,8 @@ To have the project work, the Axia iQ Core must be configured to relay the "Phon
 
 To configure the GPIO port correctly please read over the following steps:
 
-1) 
+1) Go to the iQ6 Gateway Unit in the server room and open its configuration browser using the appropriate IP address.
+2) In the configuration browser, under the GPIO Configuration window, give Port #1 on the iQ6 Gateway Unit unique livewire channel number
 
 
 
@@ -120,6 +125,14 @@ To reprogram the Arduino you will need to remove the circuit module from the res
 | Arduino isn't working even though the PWR LED on it lights up. | Make sure you have the power wire soldered to the Arduino's 5V or VIN pin and that it isn't soldered to the Arduino's RST pin. |
 
 #
+
+### Upgrades and Improvement
+
+
+
+
+
+
 
 ### References and Appreciation
 
