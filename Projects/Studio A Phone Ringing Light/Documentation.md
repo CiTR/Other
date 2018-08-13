@@ -98,20 +98,19 @@ To have the project work, the Axia iQ Core must be configured to relay the "Phon
 
 To configure the GPIO port correctly please read over the following steps:
 
-1) Go to the iQ6 Gateway Unit in the server room and open its configuration browser using the appropriate IP address.
+1) Go to the iQ6 Telos Phone-Hybrid Unit in the server room and open its configuration browser using the appropriate IP address.
 
-2) In the configuration browser, under the GPIO Configuration window, give Port #1 on the iQ6 Gateway Unit a unique livewire channel number. _NOTE_ that GPIO channel numbers do not advertise to the network, so they won't show up in the browser window of connected iQ Cores.
+2) In the configuration browser, under the GPIO Configuration window, give Port #1 on the iQ6 Telos Phone-Hybrid Unit a unique livewire channel number. _NOTE_ that GPIO channel numbers do not advertise to the network, so they won't show up in the browser window of connected iQ Cores.
 
 <img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Images/GPIO%20Config%20Image%201.JPG">
 
 3) Go to the configuration browser for your selected Axia iQ Qor and go to its GPIO page.
 
-4) On this page, set up a GPIO port. Set the LOGIC FOR item to LIVEWIRE MIRROR and for its channel number, give it the same number you gave to port #1 on the iQ Gateway, then click apply. (In this example, I chose to use port 3, though you can use any available GPIO port on the iQ Qor unit.)   
+4) On this page, set up a GPIO port. Set the LOGIC FOR item to LIVEWIRE MIRROR and for its channel number, give it the same number you gave to port #1 on the iQ6 Telos Phone-Hybrid Unit, then click apply. (In this example, I chose to use port 3, though you can use any available GPIO port on the iQ Qor unit.)   
 
 <img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Images/GPIO%20Config%20Image%202.JPG">
 
-5) With this finished, the port you configured in the QOR will mirror the port on the iQ6 Gateway. With this done you should see the 
-the following pins light up during an incoming call. _NOTE_ that on the Gateway, the pin lighting up is an input since it is inputting this signal to the network to send it to the QOR's output. 
+5) With this finished, the port you configured in the QOR will mirror the port on the iQ6 Telos Phone-Hybrid Unit. With this done you should see the the following pins light up during an incoming call. _NOTE_ that on the Phone-Hybrid, the pin lighting up is an input since it is inputting this signal to the network to send it to the QOR's output. 
 
 <img src="https://github.com/CiTR/Other/blob/master/Projects/Studio%20A%20Phone%20Ringing%20Light/Images/GPIO%20Config%20Image%203.JPG">
 
