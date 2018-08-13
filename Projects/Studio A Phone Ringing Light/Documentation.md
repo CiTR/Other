@@ -145,13 +145,27 @@ As with anything, there is always more to build and improve upon. For those who 
 
 1) Adding More LED Strips
 
+If you decide that you want more LED strips, then you will be happy to know that this project allows for several LED strip additions to be added with the same controller. Each digital pin on the Arduino Nano can be employed to control a separate LED strip with a any behaviour you choose. Or if you like you can daisy chain more LED strips to the end of the current strip using their built in JST connectors, though this will lock all such LED strips into the same control behaviour since they will both be controlled with the same Arduino pin.  
+
+Regardless of how you choose to add more LED strips, KEEP IN MIND that you may need to scale up the power supply to provide more current for more LED strips. Make sure to consult the project's supporting documentation to verify that you are continuing to meet the power needs of the project when scalling it up.
+
 2) Securing the Setup
 
-3) Light Box?
+Currently, the LED strip, and all the wire between it and the circuit module are fastened with electricians tape only. While this is okay as a temporary solution, better fasteners should be used for the long term if the current setup is to be kept. 
+
+3) Light Box
+
+One idea to consider is to move the LED strip into a light box for better visibility.
 
 4) Flicker Glitch
 
+Currently, when running the LED strip, during its operation, the cable will flicker. This doesn't stop the circuit's operation in any way and is only a small aesthetic setback. 
 
+If more time is given to correct this flicker effect, then I would start by reviewing the code of this project to make sure there aren't any functional timing errors made in the control behavior portion of the code. 
+
+Next I would put time into improving the cable connecting the LED module and the circuit module. I didn't notice this glitch when I was using a shorter cable during prototyping, so I imagine using properly sheilded cable to connect the module and the LED strip will do wonders.  
+
+If neither of the two options above present any improvements, then I would look into strengthening the power supply. 
 
 #
 
