@@ -141,7 +141,15 @@ To reprogram the Arduino you will need to remove the circuit module from the res
 
 ### Upgrades and Improvement
 
+As with anything, there is always more to build and improve upon. For those who will be around after me who may consider doing improvements, here are some places they can start:
 
+1) Adding More LED Strips
+
+2) Securing the Setup
+
+3) Light Box?
+
+4) Flicker Glitch
 
 
 
